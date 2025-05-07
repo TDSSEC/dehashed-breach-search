@@ -62,6 +62,7 @@ if __name__ == '__main__':
     parser.add_argument('--wildcard', action='store_true', help='Enable wildcard matching')
     parser.add_argument('--regex', action='store_true', help='Enable regex matching')
     parser.add_argument('--dedupe', action='store_true', help='De-duplicate results')
+    parser.add_argument('--max-pages', type=int, default=None, help='Maximum number of pages to fetch')  
 
     args = parser.parse_args()
     cleaned_domain = args.domain.lstrip('@')
@@ -73,6 +74,10 @@ if __name__ == '__main__':
     print(f"🔍 Searching DeHashed for {search_query}...")
 
     while True:
+        if args.max_pages is not None and page > args.max_pages:
+            print(f"⛔ Reached max page limit: {args.max_pages}")
+            break
+            
         response = v2_search(
             query=search_query,
             page=page,
