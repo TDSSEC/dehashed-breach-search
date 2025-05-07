@@ -26,8 +26,8 @@ This is a command-line tool to fetch and export DeHashed breach data for a given
 ## 🛠️ Installation
 
 ```bash
-git clone https://github.com/yourusername/dehashed-domain-search.git
-cd dehashed-domain-search
+git clone https://github.com/yourusername/dehashed-breach-search.git
+cd dehashed-breach-search
 pip install -r requirements.txt
 ```
 
