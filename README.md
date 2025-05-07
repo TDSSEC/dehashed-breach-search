@@ -32,11 +32,11 @@ pip install -r requirements.txt
 ```
 
 ## 🔐 Set Your API Key
-Edit the script and replace YOUR_API_KEY with your DeHashed key:
+Edit the script and replace YOUR_API_KEY with your DeHashed key:  
 `api_key = "YOUR_API_KEY"`
 
 ## 🧪 Usage
-`python dehashed_search.py --domain example.com --wildcard --dedupe`
+`python dehashed_search.py --domain example.com`
 
 Output file will be saved as:
 `dehashed_example.com.csv`
