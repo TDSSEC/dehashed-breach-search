@@ -35,6 +35,8 @@ pip install -r requirements.txt
 Edit the script and replace YOUR_API_KEY with your DeHashed key:  
 `api_key = "YOUR_API_KEY"`
 
+--- 
+
 ## 🧪 Usage
 ### Get Everything  
 Pull all possible entries for a given domain (maximum 10,000 per license model):  
@@ -44,11 +46,7 @@ Pull all possible entries for a given domain (maximum 10,000 per license model):
 To iterate through a set number of pages:  
 `python dehashed_search.py --domain example.com --max-pages 3`
 
-### Output file will be saved as:  
-`dehashed_example.com.csv`
-
-
-## Options
+### Options
 | Argument        | Description                           |
 | --------------- | ------------------------------------- |
 | `--domain`      | Domain to search (e.g. `example.com`) |
@@ -57,6 +55,12 @@ To iterate through a set number of pages:
 | `--regex`       | Enable regex matching                 |
 | `--dedupe`      | Remove duplicate entries              |
 | `--max-pages`   | Maximum number of pages to crawl      |
+
+### Output 
+File will be saved as:  
+`dehashed_example.com.csv`
+
+--- 
 
 ## 🛡 Disclaimer
 
